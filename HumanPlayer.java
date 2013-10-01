@@ -18,6 +18,11 @@ public class HumanPlayer implements Player {
 		playerColor = inputColor;
 	}
 	
+	HumanPlayer (Color inputColor, String inputName) {
+		playerName = inputName;
+		playerColor = inputColor;
+	}
+	
 
 	@Override
 	public void move(GameBoard currentBoard) {

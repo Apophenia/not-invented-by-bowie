@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class Game {
 	
 	static Scanner userInput = new Scanner(System.in);
-	static Player redPlayer = new HumanPlayer(Color.RED);
-	static Player bluePlayer = new HumanPlayer(Color.BLUE);
+	static Player redPlayer; // new HumanPlayer(Color.RED);
+	static Player bluePlayer; // new HumanPlayer(Color.BLUE);
 	static String tempName = new String();
 	static GameBoard mainGame = new GameBoard();
 	static Boolean isRedTurn = true;
@@ -29,9 +29,10 @@ public class Game {
 		System.out.println("Welcome to Four-in-a-Row.");
 		System.out.println("Enter a name for red player (x):");
 		tempName = userInput.next();
-	//	redPlayer.setName(tempName);
+		redPlayer = new HumanPlayer(Color.RED, tempName);
 		System.out.println("Enter a name for blue player (o):");
 		tempName = userInput.next();
+		bluePlayer = new HumanPlayer(Color.BLUE, tempName);
 	//	bluePlayer.setName(tempName);
 		System.out.println("Great.");
 		System.out.println("Here is the board.");
