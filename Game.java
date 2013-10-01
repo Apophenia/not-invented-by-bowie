@@ -24,8 +24,10 @@ public class Game {
 	}
 	
 	// main game dialogue and calls
-	public static void main(String[] args) {		
-		mainGame.clear();
+	public static void main(String[] args) {	
+		Tests.runAllTests(mainGame);
+		
+	/*	mainGame.clear();
 		System.out.println("Welcome to Four-in-a-Row.");
 		System.out.println("Enter a name for red player (x):");
 		tempName = userInput.next();
@@ -36,7 +38,7 @@ public class Game {
 	//	bluePlayer.setName(tempName);
 		System.out.println("Great.");
 		System.out.println("Here is the board.");
-		gameLoop();
+		gameLoop(); */
 	}
 	
 
