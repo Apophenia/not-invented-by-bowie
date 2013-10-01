@@ -31,7 +31,7 @@ public class Tests {
 	
 	public void Test(GameBoard board, Color[] boardArrangement) {
 		board.clear();
-		// ummmmmmm
+
 		board.draw();
 	}
 	
